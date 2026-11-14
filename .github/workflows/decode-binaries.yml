@@ -1,0 +1,30 @@
+# Binary files (PDFs, PNGs) are uploaded as base64 text (*.b64) because the
+# publishing tool only writes text. This workflow decodes them in place.
+name: Decode binary assets
+on:
+  push:
+    paths: ["**.b64"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  decode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode *.b64 files
+        run: |
+          set -e
+          found=0
+          for f in $(git ls-files '*.b64'); do
+            base64 -d "$f" > "${f%.b64}"
+            git rm -q "$f"
+            git add "${f%.b64}"
+            found=1
+          done
+          if [ "$found" = 1 ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Decode binary assets"
+            git push
+          fi
