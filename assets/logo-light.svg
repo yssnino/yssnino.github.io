@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t"><title id="t">Nino Travel logo: a plane whose flight path draws a heart</title>
+<path d="M44 44 L32 55 C14 42 5 31 8.5 21.5 C12 12.5 25 11 32 21.5 C35.2 15.8 39.4 13.3 43.5 13.1" fill="none" stroke="#E76F51" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M44 44 L50.5 37.5 C54.5 32.5 56 27 54.5 22" fill="none" stroke="#E76F51" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="0.1 5.2" opacity=".85"/>
+<g transform="translate(49.5 13.6) rotate(78) scale(.78)" fill="#FBF6EF"><path d="M0,-10 C1.2,-10 1.7,-8.6 1.7,-7 L1.7,-2.6 L9.6,2.2 L9.6,4.4 L1.7,2 L1.4,6.6 L4.2,8.6 L4.2,10 L0,9.1 L-4.2,10 L-4.2,8.6 L-1.4,6.6 L-1.7,2 L-9.6,4.4 L-9.6,2.2 L-1.7,-2.6 L-1.7,-7 C-1.7,-8.6 -1.2,-10 0,-10 Z"/></g>
+</svg>
