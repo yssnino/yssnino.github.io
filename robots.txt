@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /dl/
+Disallow: /thanks/
+Sitemap: https://yssnino.github.io/sitemap.xml
