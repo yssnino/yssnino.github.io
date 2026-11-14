@@ -49,14 +49,14 @@ window.NV_CONFIG = {
 
   // Stripe Payment Links for paid services and digital products.
   stripe: {
-    premiumItinerary: "",
-    customTripPlan: "",
-    familyTripPlan: "",
-    flightHacksGuide: "",
-    familyPackingKit: "",
-    cityGuides: "",
-    kidsActivityPack: "",
-    delaySurvivalKit: "",
-    guideBundle: ""
+    premiumItinerary: "https://buy.stripe.com/8x214pdvw8sv4qq69ffYY06",
+    customTripPlan: "https://buy.stripe.com/6oU14pezAdMPe10apvfYY07",
+    familyTripPlan: "https://buy.stripe.com/9B628t3UW4cf0aa9lrfYY08",
+    flightHacksGuide: "https://buy.stripe.com/00wfZj0IKgZ1bSS1SZfYY00",
+    familyPackingKit: "https://buy.stripe.com/dRm3cxcrsaAD1ee69ffYY01",
+    cityGuides: "https://buy.stripe.com/cNi5kF0IKbEH3mmcxDfYY02",
+    kidsActivityPack: "https://buy.stripe.com/28EfZj3UW5gj5uu7djfYY03",
+    delaySurvivalKit: "https://buy.stripe.com/bJe28tfDEfUXe10fJPfYY04",
+    guideBundle: "https://buy.stripe.com/3cIdRb778dMP6yygNTfYY05"
   }
 };
