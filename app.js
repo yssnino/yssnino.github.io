@@ -279,7 +279,7 @@
     else { el.innerHTML = ""; var s = document.createElement("a"); s.href = C.socialUrl; s.rel = "noopener"; s.textContent = "a direct message to " + C.socialHandle + " on TikTok"; el.appendChild(s); }
   });
   var mb = $(".menu-btn");
-  if (mb) mb.addEventListener("click", function () { var n = $(".nav-links"); var o = n.classList.toggle("open"); mb.setAttribute("aria-expanded", o); });
+  if (mb && !mb.dataset.nvDone) { mb.dataset.nvDone = "1"; mb.addEventListener("click", function () { var n = $(".nav-links"); var o = n.classList.toggle("open"); mb.setAttribute("aria-expanded", o); }); }
   $$(".nav-links a").forEach(function (a) { a.addEventListener("click", function () { $(".nav-links").classList.remove("open"); }); });
   var y = $("#year"); if (y) y.textContent = new Date().getFullYear();
 })();

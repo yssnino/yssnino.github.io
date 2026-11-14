@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trip budget planner: see your total trip cost | Nino Travel</title>
+<meta name="description" content="Free trip budget calculator for families and budget travelers. Add flights, bags, hotel fees, transport, food, and activities to see the real total and cost per person.">
+<link rel="canonical" href="https://yssnino.github.io/planner.html">
+<meta name="theme-color" content="#16213e">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nino Travel">
+<meta property="og:title" content="Trip budget planner: see your total trip cost | Nino Travel">
+<meta property="og:description" content="Free trip budget calculator for families and budget travelers. Add flights, bags, hotel fees, transport, food, and activities to see the real total and cost per person.">
+<meta property="og:url" content="https://yssnino.github.io/planner.html">
+<meta property="og:image" content="https://yssnino.github.io/assets/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nino Travel: a plane drawing a heart in the sky">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Trip budget planner: see your total trip cost | Nino Travel">
+<meta name="twitter:description" content="Free trip budget calculator for families and budget travelers. Add flights, bags, hotel fees, transport, food, and activities to see the real total and cost per person.">
+<meta name="twitter:image" content="https://yssnino.github.io/assets/og-image.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="container nav" aria-label="Main">
+    <a class="brand" href="/"><img src="/assets/logo-light.svg" alt="" width="38" height="38"><span>Nino<small>Travel</small></span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/#search">Search</a></li>
+      <li><a href="/help-center.html">Delay Help</a></li>
+      <li><a href="/kids-zone.html">Kids' Zone</a></li>
+      <li><a href="/guides.html">Guides</a></li>
+      <li><a href="/planner.html">Budget Planner</a></li>
+      <li><a href="/#planning">Concierge</a></li>
+      <li><a href="/#shop">Shop</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+<section class="help-hero"><div class="container"><p class="eyebrow">Free tool</p><h1>What will this trip really cost?</h1>
+<p class="sub" style="margin-bottom:0">Headline prices often leave out bags, resort fees, parking, and food. Add your own estimates below to see the whole-trip total and cost per person, then search for options that fit. Everything stays on your device.</p></div></section>
+<section style="padding-top:32px"><div class="container">
+<div class="soft">
+  <h2 style="font-size:1.4rem">Who's going?</h2>
+  <div class="grid">
+    <div class="f s3 m6"><label for="p-dest">Destination (optional)</label><input id="p-dest" placeholder="e.g. Orlando"></div>
+    <div class="f s3 m6"><label for="p-adults">Adults</label><input id="p-adults" type="number" min="0" step="1" inputmode="decimal" value="2" data-calc></div><div class="f s3 m6"><label for="p-kids">Kids</label><input id="p-kids" type="number" min="0" step="1" inputmode="decimal" value="2" data-calc></div><div class="f s3 m6"><label for="p-nights">Nights</label><input id="p-nights" type="number" min="0" step="1" inputmode="decimal" value="4" data-calc></div>
+  </div>
+  <h2 style="font-size:1.4rem;margin-top:22px">Getting there</h2>
+  <div class="grid"><div class="f s3 m6"><label for="p-flight">Flight per person (round trip)</label><input id="p-flight" type="number" min="0" step="1" inputmode="decimal" value="250" data-calc></div><div class="f s3 m6"><label for="p-bags">Bag & seat fees, total</label><input id="p-bags" type="number" min="0" step="1" inputmode="decimal" value="120" data-calc></div><div class="f s3 m6"><label for="p-park">Airport parking / ride to airport</label><input id="p-park" type="number" min="0" step="1" inputmode="decimal" value="60" data-calc></div><div class="f s3 m6"><label for="p-transport">Car rental, transfers & rides, total</label><input id="p-transport" type="number" min="0" step="1" inputmode="decimal" value="250" data-calc></div></div>
+  <h2 style="font-size:1.4rem;margin-top:22px">Where you'll stay</h2>
+  <div class="grid"><div class="f s3 m6"><label for="p-hotel">Nightly rate per room</label><input id="p-hotel" type="number" min="0" step="1" inputmode="decimal" value="180" data-calc></div><div class="f s3 m6"><label for="p-rooms">Rooms</label><input id="p-rooms" type="number" min="0" step="1" inputmode="decimal" value="1" data-calc></div><div class="f s3 m6"><label for="p-tax">Taxes & fees (% of room)</label><input id="p-tax" type="number" min="0" step="0.5" inputmode="decimal" value="15" data-calc></div><div class="f s3 m6"><label for="p-resort">Resort/destination fee per night</label><input id="p-resort" type="number" min="0" step="1" inputmode="decimal" value="0" data-calc></div></div>
+  <h2 style="font-size:1.4rem;margin-top:22px">Food &amp; fun</h2>
+  <div class="grid"><div class="f s3 m6"><label for="p-food">Food per person per day</label><input id="p-food" type="number" min="0" step="1" inputmode="decimal" value="45" data-calc></div><div class="f s3 m6"><label for="p-act">Activities & tickets, total</label><input id="p-act" type="number" min="0" step="1" inputmode="decimal" value="300" data-calc></div><div class="f s3 m6"><label for="p-extra">Insurance, eSIM, souvenirs</label><input id="p-extra" type="number" min="0" step="1" inputmode="decimal" value="100" data-calc></div><div class="f s3 m6"><label for="p-buffer">Buffer for surprises (%)</label><input id="p-buffer" type="number" min="0" step="1" inputmode="decimal" value="10" data-calc></div></div>
+  <p class="note">The starting numbers are only placeholders to show how it works. Replace them with prices you've checked on the booking sites.</p>
+</div>
+<div class="cards" style="margin-top:18px" aria-live="polite">
+  <div class="card" style="border:2px solid var(--coral)"><p class="eyebrow">Estimated total</p><div class="price" id="r-total">$0</div><p id="r-pp"></p></div>
+  <div class="card"><p class="eyebrow">Breakdown</p><table class="simple" id="r-table"></table></div>
+  <div class="card"><p class="eyebrow">Next steps</p><p>Search for options that fit this budget:</p><div class="actions"><a class="btn btn-primary" href="/#search">Search flights</a><a class="btn btn-secondary" id="r-hotels" target="_blank" rel="noopener sponsored" href="https://www.booking.com/">Find stays</a><a class="btn btn-secondary" id="r-todo" target="_blank" rel="noopener sponsored" href="https://www.getyourguide.com/">Things to do</a></div>
+  <p class="note">Want us to do the research? Our <a href="/#planning">travel concierge</a> can build the plan for you.</p></div>
+</div>
+<div class="soft" style="margin-top:18px"><h2 style="font-size:1.4rem">Hidden costs to check before you book</h2>
+<ul><li><strong>Hotels:</strong> taxes, resort or destination fees, parking, and Wi-Fi are sometimes shown only at checkout.</li><li><strong>Flights:</strong> carry-on and checked bags, seat selection to sit together, and change fees on basic fares.</li><li><strong>Cars:</strong> deposits, young-driver fees, tolls, fuel policy, and insurance.</li><li><strong>Activities:</strong> per-person pricing for kids, transport to the venue, and cancellation terms.</li><li><strong>Abroad:</strong> foreign transaction fees, phone data, tourist taxes, and tipping customs.</li></ul></div>
+</div></section></main>
+<div class="disclosure-bar"><div class="container"><strong>Heads up:</strong> Nino Travel is a search and inspiration site, not a travel agency. When you book through our partner links we may earn a commission, at no extra cost to you. <a href="/affiliate-disclosure.html">How we make money</a></div></div>
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/assets/logo-light.svg" alt="" width="38" height="38"><span>Nino<small>Travel</small></span></a>
+        <p>Search smart, book with established travel brands, and travel with less stress. Made in Atlanta by YSSN Nino for families, couples, and budget travelers everywhere.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="/#search">Search flights &amp; hotels</a></li><li><a href="/planner.html">Trip budget planner</a></li><li><a href="/help-center.html">Delay Help Center</a></li><li><a href="/kids-zone.html">Kids' Zone</a></li><li><a href="/guides.html">Airport tips &amp; packing lists</a></li></ul></div>
+      <div><h4>Services</h4><ul><li><a href="/#planning">Travel concierge</a></li><li><a href="/#shop">Travel shop</a></li><li><a href="/service-terms.html">Service terms</a></li><li><a href="/delivery.html">Delivery</a></li><li><a href="/refunds.html">Refunds</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="/affiliate-disclosure.html">Affiliate disclosure</a></li><li><a href="/privacy.html">Privacy policy</a></li><li><a href="/terms.html">Terms of use</a></li></ul></div>
+    </div>
+    <p class="fine">&copy; <span id="year">2026</span> Nino Travel by YSSN Nino. Nino Travel is an independent site and is not affiliated with, endorsed by, or acting as an agent of the airlines, hotels, or booking sites we link to. Bookings, prices, payments, changes, and refunds are handled by the provider you book with. Brand names belong to their owners.</p>
+  </div>
+</footer>
+<script src="/config.js" defer></script><script src="/app.js" defer></script><script src="/common.js" defer></script><script src="/planner.js" defer></script>
+</body>
+</html>
